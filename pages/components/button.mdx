@@ -1,0 +1,217 @@
+import { Tabs } from "nextra/components";
+
+# Button
+
+## Primary
+
+<Tabs items={['Preview', 'Code']}>
+  <Tabs.Tab>
+    <div className="flex justify-center items-center p-10 bg-transparent border border-gray-700 rounded-lg">
+      <button className="bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 px-2 py-1 text-base font-medium rounded-lg duration-300">
+        Primary
+      </button>
+    </div>
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+```jsx copy filename="primaryButton.jsx"
+export default function primaryButton() {
+  return (
+    <button className="bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 px-2 py-1 text-base font-medium rounded-lg duration-300">
+      Primary
+    </button>
+  )
+}
+```
+  </Tabs.Tab>
+</Tabs>
+
+## Secondary
+
+<Tabs items={['Preview', 'Code']}>
+  <Tabs.Tab>
+    <div className="flex justify-center items-center p-10 bg-transparent border border-gray-700 rounded-lg">
+      <button className="bg-gray-500 text-white hover:bg-gray-800 dark:bg-gray-500 dark:text-white dark:hover:bg-gray-800 px-2 py-1 text-base font-medium rounded-lg duration-300">
+        Secondary
+      </button>
+    </div>
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+```jsx copy filename="secondaryButton.jsx"
+export default function secondaryButton() {
+  return (
+    <button className="bg-gray-500 text-white hover:bg-gray-800 dark:bg-gray-500 dark:text-white dark:hover:bg-gray-800 px-2 py-1 text-base font-medium rounded-lg duration-300">
+      Secondary
+    </button>
+  )
+}
+```
+  </Tabs.Tab>
+</Tabs>
+
+## Destructive
+
+<Tabs items={['Preview', 'Code']}>
+  <Tabs.Tab>
+    <div className="flex justify-center items-center p-10 bg-transparent border border-gray-700 rounded-lg">
+      <button className="bg-red-500 text-white hover:bg-red-700 dark:bg-red-600 dark:text-white dark:hover:bg-red-800 px-2 py-1 text-base font-medium rounded-lg duration-300">
+        Destructive
+      </button>
+    </div>
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+```jsx copy filename="destructiveButton.jsx"
+export default function destructiveButton() {
+  return (
+    <button className="bg-red-500 text-white hover:bg-red-700 dark:bg-red-600 dark:text-white dark:hover:bg-red-800 px-2 py-1 text-base font-medium rounded-lg duration-300">
+      Destructive
+    </button>
+  )
+}
+```
+  </Tabs.Tab>
+</Tabs>
+
+## Outline
+
+<Tabs items={['Preview', 'Code']}>
+  <Tabs.Tab>
+    <div className="flex justify-center items-center p-10 bg-transparent border border-gray-700 rounded-lg">
+      <button className="bg-transparent text-black border border-gray-600 hover:text-white hover:bg-gray-600 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600 px-2 py-1 text-base font-medium rounded-lg duration-300">
+        Outline
+      </button>
+    </div>
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+```jsx copy filename="outlineButton.jsx"
+export default function outlineButton() {
+  return (
+    <button className="bg-transparent text-black border border-gray-600 hover:text-white hover:bg-gray-600 dark:text-white dark:border-gray-600 dark:hover:bg-gray-600 px-2 py-1 text-base font-medium rounded-lg duration-300">
+      Outline
+    </button>
+  )
+}
+```
+  </Tabs.Tab>
+</Tabs>
+
+## Ghost
+
+<Tabs items={['Preview', 'Code']}>
+  <Tabs.Tab>
+    <div className="flex justify-center items-center p-10 bg-transparent border border-gray-700 rounded-lg">
+      <button className="bg-transparent text-black hover:bg-gray-500/20 dark:text-white dark:hover:bg-gray-500/40 px-2 py-1 text-base font-medium rounded-lg duration-300">
+        Ghost
+      </button>
+    </div>
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+```jsx copy filename="ghostButton.jsx"
+export default function ghostButton() {
+  return (
+    <button className="bg-transparent text-black hover:bg-gray-500/20 dark:text-white dark:hover:bg-gray-500/40 px-2 py-1 text-base font-medium rounded-lg duration-300">
+      Ghost
+    </button>
+  )
+}
+```
+  </Tabs.Tab>
+</Tabs>
+
+## Link
+
+<Tabs items={['Preview', 'Code']}>
+  <Tabs.Tab>
+    <div className="flex justify-center items-center p-10 bg-transparent border border-gray-700 rounded-lg">
+      <button className="bg-transparent text-black hover:text-gray-800 dark:text-white dark:hover:text-gray-200 px-2 py-1 text-base font-medium underline rounded-lg duration-300">
+        Link
+      </button>
+    </div>
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+```jsx copy filename="linkButton.jsx"
+export default function linkButton() {
+  return (
+    <button className="bg-transparent text-black hover:text-gray-800 dark:text-white dark:hover:text-gray-200 px-2 py-1 text-base font-medium underline rounded-lg duration-300">
+      Link
+    </button>
+  )
+}
+```
+  </Tabs.Tab>
+</Tabs>
+
+## Icon
+
+<Tabs items={['Preview', 'Code']}>
+  <Tabs.Tab>
+    <div className="flex justify-center items-center p-10 bg-transparent border border-gray-700 rounded-lg">
+      <button className="inline-flex justify-center items-center bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 px-2 py-1 text-base font-medium rounded-lg duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M5 12l14 0"></path>
+          <path d="M15 16l4 -4"></path>
+          <path d="M15 8l4 4"></path>
+        </svg>
+      </button>
+    </div>
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+```jsx copy filename="iconButton.jsx"
+export default function iconButton() {
+  return (
+    <button className="inline-flex justify-center items-center bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 px-2 py-1 text-base font-medium rounded-lg duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M5 12l14 0"></path>
+        <path d="M15 16l4 -4"></path>
+        <path d="M15 8l4 4"></path>
+      </svg>
+    </button>
+  )
+}
+```
+  </Tabs.Tab>
+</Tabs>
+
+## With Icon
+
+<Tabs items={['Preview', 'Code']}>
+  <Tabs.Tab>
+    <div className="flex justify-center items-center p-10 bg-transparent border border-gray-700 rounded-lg">
+      <button className="inline-flex justify-center items-center bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 px-2 py-1 text-base font-medium rounded-lg duration-300">
+        <span className="mr-2">With Icon</span>
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M5 12l14 0"></path>
+          <path d="M15 16l4 -4"></path>
+          <path d="M15 8l4 4"></path>
+        </svg>
+      </button>
+    </div>
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+```jsx copy filename="withIconButton.jsx"
+export default function withIconButton() {
+  return (
+    <button className="inline-flex justify-center items-center bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 px-2 py-1 text-base font-medium rounded-lg duration-300">
+      <span className="mr-2">With Icon</span>
+      <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M5 12l14 0"></path>
+        <path d="M15 16l4 -4"></path>
+        <path d="M15 8l4 4"></path>
+      </svg>
+    </button>
+  )
+}
+```
+  </Tabs.Tab>
+</Tabs>
