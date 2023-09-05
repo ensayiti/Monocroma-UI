@@ -1,0 +1,89 @@
+import { Tabs } from "nextra/components";
+
+# Input
+
+## Default
+
+<Tabs items={['Preview', 'Code']}>
+  <Tabs.Tab>
+    <div className="flex justify-center items-center p-10 bg-transparent border border-gray-700 rounded-lg">
+      <input type="text" className="bg-white text-black dark:bg-black dark:text-white text-base font-medium border border-gray-500 placeholder-gray-500 px-2 py-1 rounded-lg transition duration-300" placeholder="Default Input" />
+    </div>
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+```jsx copy filename="defaultInput.jsx"
+export default function defaultInput() {
+  return (
+    <input type="text" className="bg-white text-black dark:bg-black dark:text-white text-base font-medium border border-gray-500 placeholder-gray-500 px-2 py-1 rounded-lg transition duration-300" placeholder="Default Input" />
+  )
+}
+```
+  </Tabs.Tab>
+</Tabs>
+
+## File
+
+<Tabs items={['Preview', 'Code']}>
+  <Tabs.Tab>
+    <div className="flex justify-center items-center p-10 bg-transparent border border-gray-700 rounded-lg">
+      <input class="block w-1/2 bg-white text-black dark:bg-black dark:text-white text-base font-medium border border-gray-500 placeholder-gray-500 px-2 py-1 rounded-lg transition duration-300 cursor-pointer" type="file" />
+    </div>
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+```jsx copy filename="fileInput.jsx"
+export default function fileInput() {
+  return (
+    <input class="block w-1/2 bg-white text-black dark:bg-black dark:text-white text-base font-medium border border-gray-500 placeholder-gray-500 px-2 py-1 rounded-lg transition duration-300 cursor-pointer" type="file" />
+  )
+}
+```
+  </Tabs.Tab>
+</Tabs>
+
+## Disabled
+
+<Tabs items={['Preview', 'Code']}>
+  <Tabs.Tab>
+    <div className="flex justify-center items-center p-10 bg-transparent border border-gray-700 rounded-lg">
+      <input disabled className="bg-white text-black dark:bg-black dark:text-white text-base font-medium border border-gray-500 placeholder-gray-500 px-2 py-1 rounded-lg transition duration-300 cursor-not-allowed" placeholder="Disabled Input" />
+    </div>
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+```jsx copy filename="disabledInput.jsx"
+export default function disabledInput() {
+  return (
+    <input disabled className="bg-white text-black dark:bg-black dark:text-white text-base font-medium border border-gray-500 placeholder-gray-500 px-2 py-1 rounded-lg transition duration-300 cursor-not-allowed" placeholder="Disabled Input" />
+  )
+}
+```
+  </Tabs.Tab>
+</Tabs>
+
+## With Label
+
+<Tabs items={['Preview', 'Code']}>
+  <Tabs.Tab>
+    <div className="flex justify-center items-center p-10 bg-transparent border border-gray-700 rounded-lg">
+        <div className="flex flex-col">
+            <label className="-mb-0.5 text-black dark:text-white items-center text-base font-medium">Form</label>
+            <input type="text" className="bg-white text-black dark:bg-black dark:text-white text-base font-medium border border-gray-500 placeholder-gray-500 px-2 py-1 rounded-lg transition duration-300" placeholder="With Label" />
+        </div>
+    </div>
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+```jsx copy filename="withLabelInput.jsx"
+export default function withLabelInput() {
+  return (
+    <div className="flex flex-col">
+        <label className="-mb-0.5 text-black dark:text-white items-center text-base font-medium">Form</label>
+        <input type="text" className="bg-white text-black dark:bg-black dark:text-white text-base font-medium border border-gray-500 placeholder-gray-500 px-2 py-1 rounded-lg transition duration-300" placeholder="With Label" />
+    </div>
+  )
+}
+```
+  </Tabs.Tab>
+</Tabs>
